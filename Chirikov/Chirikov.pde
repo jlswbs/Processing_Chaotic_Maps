@@ -14,7 +14,7 @@ void setup() {
 
 void draw() {
   
-	for (int i=0; i<1000; i++) {
+  for (int i=0; i<1000; i++) {
   
     float nx = x;
     float ny = y;
