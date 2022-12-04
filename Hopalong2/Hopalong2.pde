@@ -2,9 +2,7 @@
 
   float x = 1.0;
   float y = 0.0;
-  float a = 2.0;
-  float b = 0.75;
-  float c = 0.51;
+  float a, b, c;
 
   float sign(float a) { return (a == 0.0) ? 0.0 : (a<0.0 ? -1.0 : 1.0); }
 
@@ -12,6 +10,10 @@ void setup() {
   
   size(640, 480);
   background(255);
+  
+  a = exp(random(0.1, 1.0) * log(height>>8));
+  b = exp(random(0.1, 1.0) * log(height>>8));
+  c = random(0.1, 1.0) * (height>>8);
   
 }
 
